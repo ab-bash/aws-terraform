@@ -3,7 +3,7 @@ resource "aws_instance" "wordpressec2" {
 #  ami                    = var.IsUbuntu ? data.aws_ami.ubuntu.id : data.aws_ami.linux2.id
   ami                    = var.ami
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.private-1.id
+  subnet_id              = aws_subnet.public-1.id
   vpc_security_group_ids = ["${aws_security_group.ec2_allow_rule.id}"]
 #  user_data              = data.template_file.user_data.rendered
   key_name               = aws_key_pair.mykey-pair.id
