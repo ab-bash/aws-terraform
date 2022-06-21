@@ -19,7 +19,7 @@ subnet4_cidr = "10.0.4.0/24"     //Private subnet for RDS
 
 PUBLIC_KEY_PATH  = "../../mykey-pair.pub" // key name for ec2, make sure it is created before terraform apply
 PRIV_KEY_PATH    = "../../mykey-pair"
-instance_type    = "t2.micro"    //type of instance
-instance_class   = "db.t2.micro" //type of RDS Instance
+instance_type    = "t2.small"    //type of instance
+#instance_class   = "db.t2.micro" //type of RDS Instance
 root_volume_size = 22
 keyname = "mykey-pair"

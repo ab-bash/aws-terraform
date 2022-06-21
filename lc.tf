@@ -20,7 +20,7 @@ resource "aws_autoscaling_group" "wordpress-asg" {
   launch_configuration = aws_launch_configuration.wordpress-lc.name
   min_size             = 1
   max_size             = 1
-  vpc_zone_identifier       = [aws_subnet.private-1.id, aws_subnet.private-2.id]
+  vpc_zone_identifier       = [aws_subnet.public-1.id, aws_subnet.public-2.id]
   lifecycle {
     create_before_destroy = true
   }
