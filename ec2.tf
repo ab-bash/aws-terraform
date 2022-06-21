@@ -9,6 +9,7 @@ resource "aws_instance" "wordpressec2" {
   key_name               = aws_key_pair.mykey-pair.id
   tags = {
     Name = "Wordpress-Web"
+    Name = "wordpress"
   }
 
   root_block_device {
@@ -31,6 +32,7 @@ resource "aws_instance" "bastion" {
   key_name               = aws_key_pair.mykey-pair.id
   tags = {
     Name = "Bastion-Host"
+    Name = "wordpress"
   }
 
   root_block_device {
