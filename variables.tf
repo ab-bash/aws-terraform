@@ -20,7 +20,7 @@ variable "subnet2_cidr" {}
 variable "subnet3_cidr" {}
 variable "subnet4_cidr" {}
 variable "instance_type" {}
-variable "instance_class" {}
+#variable "instance_class" {}
 variable "PUBLIC_KEY_PATH" {}
 variable "PRIV_KEY_PATH" {}
 variable "root_volume_size" {}
