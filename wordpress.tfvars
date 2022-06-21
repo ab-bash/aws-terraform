@@ -1,6 +1,6 @@
-database_name           = "wordpress_db"   // database name
+#database_name           = "wordpress_db"   // database name
 #db_name           = "wordpress_db"   // database name
-database_user           = "wordpress_user" //database username
+#database_user           = "wordpress_user" //database username
 shared_credentials_file = "~/.aws"         //Access key and Secret key file location
 region                  = "ap-south-1"     //Mumbai region
 IsUbuntu                = true             // true for ubuntu,false for linux 2  //boolean type
@@ -17,8 +17,8 @@ subnet3_cidr = "10.0.3.0/24"     //Private subnet for RDS
 subnet4_cidr = "10.0.4.0/24"     //Private subnet for RDS
 
 
-PUBLIC_KEY_PATH  = "./mykey-pair.pub" // key name for ec2, make sure it is created before terrafomr apply
-PRIV_KEY_PATH    = "./mykey-pair"
+PUBLIC_KEY_PATH  = "/home/jenkins/mykey-pair.pub" // key name for ec2, make sure it is created before terrafomr apply
+PRIV_KEY_PATH    = "/home/jenkins/mykey-pair"
 instance_type    = "t2.micro"    //type of instance
 instance_class   = "db.t2.micro" //type of RDS Instance
 root_volume_size = 22
