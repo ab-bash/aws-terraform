@@ -1,7 +1,7 @@
-variable "database_name" {}
+#variable "database_name" {}
 #variable "db_name" {}
-variable "database_password" {}
-variable "database_user" {}
+#variable "database_password" {}
+#variable "database_user" {}
 
 variable "region" {}
 variable "shared_credentials_file" {}
