@@ -1,0 +1,9 @@
+---
+plugin: aws_ec2
+aws_profile: default
+regions:
+  - ap-south-1
+hostnames:
+  - ip-address
+groups:
+        wordpress: "'wordpress' in tags.Name"
